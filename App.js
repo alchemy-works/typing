@@ -32,7 +32,6 @@ const Previewer = styled.div`
   width: 50%;
   border: 1px solid #dddddd;
   overflow: auto;
-  white-space: pre;
 
   @media (max-width: 768px) {
     width: unset;
