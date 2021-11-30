@@ -1,17 +1,7 @@
-const htm = window.htm
-const { createElement, useRef, useState } = window.React
-const { render } = window.ReactDOM
-const styled = window.styled
-const marked = window.marked
+export const { createElement, useRef, useState } = window['React']
+export const { render } = window['ReactDOM']
+export const styled = window['styled']
+export const marked = window['marked']
 
-const html = htm.bind(createElement)
-
-export {
-    html,
-    styled,
-    marked,
-    render,
-    useRef,
-    useState,
-    createElement,
-}
+const htm = window['htm']
+export const html = htm.bind(createElement)

@@ -84,7 +84,7 @@ export default function App(props) {
                        onInput=${handleEditorInput} />
             <${Previewer} className="markdown-body"
                           onScroll=${handlePreviewerScroll}
-                          dangerouslySetInnerHTML=${{ __html: marked(inputText) }}
+                          dangerouslySetInnerHTML=${{ __html: marked.parse(inputText) }}
                           ref=${previewerRef} />
         </Container>
     `
